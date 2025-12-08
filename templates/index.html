@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Note App</title>
+    </head>
+    <body>
+        <div class="conatiner">
+            <h1>My Notes</h1>
+            <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+            <div class="note-form">
+                <input type="text" id="title" placeholder="title">
+                <textarea id="content" placeholder="write your text"></textarea>
+                <button id="saveBtn">Save Note</button>
+            </div>
+            <h2>Saved Notes</h2>
+            <div id="notesConatiner" class="notes-grid">
+            </div>
+        </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    </body>
+</html>

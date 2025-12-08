@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    background-color: #f0e6a1;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: salmon;
+}
+
+.note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.note-form input,
+.note-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.note-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.note-form button {
+    align-self: flex-end;
+    padding: 8px 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.note-form button:hover {
+    background: #0056b3;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+    gap: 15px;
+}
+
+.note-card {
+    background: #fffce8;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #f0e6a1;
+    position: relative;
+}
+
+.note-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.note-content {
+    white-space: pre-wrap;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.note-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.note-actions button {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background: #ffc107;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: #fff;
+}
